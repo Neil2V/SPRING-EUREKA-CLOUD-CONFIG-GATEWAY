@@ -3,14 +3,19 @@ server:
     
 eureka:
   client:
-    serviceUrl:
-      defaultZone: http://localhost:8083/eureka
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
 
 spring:
-  application:
-    name: gateway-service
   cloud:
     gateway:
+      discovery:
+        locator:
+           enabled: true
       routes:
         - id: employeeModule
           uri: lb://FIRST-SERVICE
