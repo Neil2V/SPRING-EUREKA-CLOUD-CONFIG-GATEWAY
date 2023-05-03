@@ -11,7 +11,7 @@
 	<groupId>com.autentia.docker.spring.cloud.netflix</groupId>
 	<artifactId>DockerNetflix-EurekaServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>DockerNetflix-EurekaServer</name>
+	<name>eureka-server</name>
 	<description>Eureka server for our dockerized application</description>
 	<properties>
 		<java.version>11</java.version>
