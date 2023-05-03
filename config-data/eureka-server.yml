@@ -1,14 +1,6 @@
 server:
     port: 8001
-    
-spring:
-  application:
-    name: eureka-server
-
-#Eureka Configuration Properties
 eureka:
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    service-url:
-      defaultZone: http://localhost:8083/eureka
+    client:
+        fetch-registry: false
+        register-with-eureka: false
