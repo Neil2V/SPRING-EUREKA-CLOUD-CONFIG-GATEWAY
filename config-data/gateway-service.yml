@@ -1,6 +1,6 @@
 server:
-  port: 8080
-
+    port: 8080
+    
 eureka:
   client:
     serviceUrl:
@@ -20,3 +20,4 @@ spring:
           uri: lb://SECOND-SERVICE
           predicates:
             - Path=/consumer/**
+    
